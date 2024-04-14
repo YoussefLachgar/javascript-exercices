@@ -1,11 +1,11 @@
 const todaysDate = () => {
     const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1; // months starting from 0
+    const day = String(date.getDate()).padStart(2,"0");
+    const month = String(date.getMonth() + 1).padStart(2,"0"); // months starting from 0
     const year = date.getFullYear();
     console.log(`${day} ${month} ${year}`);
 
-    return `${String(day).padStart(2,"0")}/${String(month).padStart(2,"0")}/${year}`
+    return `${day}/${month}/${year}`
 };
 
 export { todaysDate };
