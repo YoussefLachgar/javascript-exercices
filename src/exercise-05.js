@@ -11,6 +11,10 @@ const prefixText = ( str, pre) => {
         result = str;
         return result;
     }
+
+    if( str.startsWith(pre)){
+        return str;
+    }
     
 };
 
