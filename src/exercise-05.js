@@ -1,9 +1,14 @@
 const prefixText = ( str, pre) => {
-    const result = '';
+    let result = '';
     if( str == ''){
-        return pre;
+        result = pre;
+        return result;
     }
     if( !str){
+        return result;
+    }
+    if( !pre){
+        result = str;
         return result;
     }
     
