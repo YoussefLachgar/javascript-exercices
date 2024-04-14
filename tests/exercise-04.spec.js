@@ -1,4 +1,4 @@
-import { todaysDate } from '../src/exercise-04';
+import { todaysDate } from "../src/exercise-04";
 
 describe(`
 Write a JavaScript function that will get the current date 
@@ -10,10 +10,9 @@ and returns it in the format dd/mm/yyyy specific format.
     const months = date.getMonth() + 1;
     const year = date.getFullYear();
 
-    const expectedResult = `${String(days).padStart(2, '0')}/${String(months).padStart(
-      2,
-      '0'
-    )}/${year}`;
+    const expectedResult = `${String(days).padStart(2, "0")}/${String(
+      months
+    ).padStart(2, "0")}/${year}`;
     expect(todaysDate()).toBe(expectedResult);
   });
 });
